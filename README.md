@@ -18,10 +18,17 @@ An automated resume screening pipeline that evaluates job applicants and logs re
 - **Flow:** Resume (PDF) → Extract text → AI Agent scores candidate → Information Extractor structures the output → Sends rejection/acceptance email via Gmail → Logs result to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Google Sheets API, Google Drive API
 - ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/ffb78241dc4607bfeeead4cb2e0e9dafe355751d/Screenshot%20(198).png)
-
+- ![image alt]
 📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
 
 ### 3. AI Email Assistant
+An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
+- **Trigger:** New Gmail message
+- **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
+- **Stack:** n8n, Groq, Gmail API, Slack API, Google Sheets API
+- - ![image alt]- ![image alt]
+
+📁 [`AI EMAIL assistant.json`](./AI%20EMAIL%20assistant.json)
 An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
 - **Trigger:** New Gmail message
 - **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
@@ -35,6 +42,7 @@ An intelligent inbox automation that reads incoming emails, summarizes them, cla
 - **LLM providers:** Groq (Llama 3.3 70B), Google Gemini
 - **Tunneling:** Cloudflare Tunnel (for local webhook exposure during development)
 - **Integrations:** Gmail API, Google Sheets API, Google Drive API, Slack API, Telegram Bot API, SerpAPI
+- ![image alt]![image alt]![image alt]![image alt]![image alt]
 
 ## What I Learned
 
@@ -51,6 +59,3 @@ An intelligent inbox automation that reads incoming emails, summarizes them, cla
 2. Reconnect the credentials for each service used (Gmail, Slack, Telegram, Groq, etc. — these are not included in the exported files for security)
 3. Activate the workflow
 
-1. Import any `.json` file into your own n8n instance (Workflows → Import from File)
-2. Reconnect the credentials for each service used (Gmail, Slack, Telegram, Groq, etc. — these are not included in the exported files for security)
-3. Activate the workflow
