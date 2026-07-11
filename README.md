@@ -22,13 +22,19 @@ An automated resume screening pipeline that evaluates job applicants and logs re
 - ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(200).png)
 - ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(201).png)
 
-### 3. AI Email Assistant
+### 3. AI Email Assistant 📁 [`AI EMAIL assistant.json`](./AI%20EMAIL%20assistant.json)
+
 An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
 - **Trigger:** New Gmail message
 - **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Slack API, Google Sheets API
+- ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(205).png)
+- ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(206).png)
+-  ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(207).png)
+- ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(208).png)
+- ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(209).png)
 
-📁 [`AI EMAIL assistant.json`](./AI%20EMAIL%20assistant.json)
+
 
 ## Tech Stack Summary
 
