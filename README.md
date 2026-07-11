@@ -9,17 +9,18 @@ A Telegram bot that answers user questions by researching the web in real time.
 - **Trigger:** Telegram message
 - **Flow:** User question → AI Agent reformulates query → Second AI Agent researches using SerpAPI → Final answer sent back via Telegram
 - **Stack:** n8n, Groq (Llama 3.3 70B), SerpAPI, Telegram Bot API
+- ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/ffb78241dc4607bfeeead4cb2e0e9dafe355751d/Screenshot%20(198).png)
+- ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(199).png)
 
 
-
-### 2. AI Hiring Agent
+### 2. AI Hiring Agent 📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
 An automated resume screening pipeline that evaluates job applicants and logs results.
 - **Trigger:** Google Form submission
 - **Flow:** Resume (PDF) → Extract text → AI Agent scores candidate → Information Extractor structures the output → Sends rejection/acceptance email via Gmail → Logs result to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Google Sheets API, Google Drive API
-- ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/ffb78241dc4607bfeeead4cb2e0e9dafe355751d/Screenshot%20(198).png)
-- ![image alt]
-📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
+
+- ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(200).png)
+- ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(201).png)
 
 ### 3. AI Email Assistant
 An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
