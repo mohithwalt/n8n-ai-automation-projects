@@ -4,7 +4,8 @@ A collection of three end-to-end automation workflows built using [n8n](https://
 
 ## Projects
 
-### 1. AI Research Chatbot (Telegram) 📁 
+### 1. [AI Research Agent](./ai-research-agent) 
+
 A Telegram bot that answers user questions by researching the web in real time.
 - **Trigger:** Telegram message
 - **Flow:** User question → AI Agent reformulates query → Second AI Agent researches using SerpAPI → Final answer sent back via Telegram
