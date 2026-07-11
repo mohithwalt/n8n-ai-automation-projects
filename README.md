@@ -4,13 +4,13 @@ A collection of three end-to-end automation workflows built using [n8n](https://
 
 ## Projects
 
-### 1. AI Research Chatbot (Telegram)
+### 1. AI Research Chatbot (Telegram) 📁 [`AI research chatbot.json`](./AI%20research%20chatbot.json)
 A Telegram bot that answers user questions by researching the web in real time.
 - **Trigger:** Telegram message
 - **Flow:** User question → AI Agent reformulates query → Second AI Agent researches using SerpAPI → Final answer sent back via Telegram
 - **Stack:** n8n, Groq (Llama 3.3 70B), SerpAPI, Telegram Bot API
 
-📁 [`AI research chatbot.json`](./AI%20research%20chatbot.json)
+
 
 ### 2. AI Hiring Agent
 An automated resume screening pipeline that evaluates job applicants and logs results.
@@ -22,13 +22,6 @@ An automated resume screening pipeline that evaluates job applicants and logs re
 📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
 
 ### 3. AI Email Assistant
-An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
-- **Trigger:** New Gmail message
-- **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
-- **Stack:** n8n, Groq, Gmail API, Slack API, Google Sheets API
-- - ![image alt]- ![image alt]
-
-📁 [`AI EMAIL assistant.json`](./AI%20EMAIL%20assistant.json)
 An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
 - **Trigger:** New Gmail message
 - **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
