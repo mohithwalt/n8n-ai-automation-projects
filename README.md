@@ -10,7 +10,7 @@ A Telegram bot that answers user questions by researching the web in real time.
 - **Flow:** User question → AI Agent reformulates query → Second AI Agent researches using SerpAPI → Final answer sent back via Telegram
 - **Stack:** n8n, Groq (Llama 3.3 70B), SerpAPI, Telegram Bot API
 
-📁 [`01-ai-research-chatbot/`](./01-ai-research-chatbot)
+📁 [`AI research chatbot.json`](./AI%20research%20chatbot.json)
 
 ### 2. AI Hiring Agent
 An automated resume screening pipeline that evaluates job applicants and logs results.
@@ -18,7 +18,7 @@ An automated resume screening pipeline that evaluates job applicants and logs re
 - **Flow:** Resume (PDF) → Extract text → AI Agent scores candidate → Information Extractor structures the output → Sends rejection/acceptance email via Gmail → Logs result to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Google Sheets API, Google Drive API
 
-📁 [`02-ai-hiring-agent/`](./02-ai-hiring-agent)
+📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
 
 ### 3. AI Email Assistant
 An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
@@ -26,7 +26,7 @@ An intelligent inbox automation that reads incoming emails, summarizes them, cla
 - **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Slack API, Google Sheets API
 
-📁 [`03-ai-email-assistant/`](./03-ai-email-assistant)
+📁 [`AI EMAIL assistant.json`](./AI%20EMAIL%20assistant.json)
 
 ## Tech Stack Summary
 
@@ -43,3 +43,13 @@ An intelligent inbox automation that reads incoming emails, summarizes them, cla
 - Conditional branching logic based on AI-classified data
 - Exposing a local development environment securely via Cloudflare Tunnel
 - Managing multiple API credentials and rate limits across different LLM providers
+
+## How to Use
+
+1. Import any `.json` file into your own n8n instance (Workflows → Import from File)
+2. Reconnect the credentials for each service used (Gmail, Slack, Telegram, Groq, etc. — these are not included in the exported files for security)
+3. Activate the workflow
+
+1. Import any `.json` file into your own n8n instance (Workflows → Import from File)
+2. Reconnect the credentials for each service used (Gmail, Slack, Telegram, Groq, etc. — these are not included in the exported files for security)
+3. Activate the workflow
