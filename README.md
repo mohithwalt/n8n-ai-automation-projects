@@ -28,7 +28,7 @@ An intelligent inbox automation that reads incoming emails, summarizes them, cla
 - **Trigger:** New Gmail message
 - **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Slack API, Google Sheets API
-- ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(205).png)
+- [image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(205).png)
 - ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(206).png)
 - ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(207).png)
 - ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(208).png)
