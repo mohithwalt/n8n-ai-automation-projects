@@ -14,7 +14,8 @@ A Telegram bot that answers user questions by researching the web in real time.
 - ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(199).png)
 
 
-### 2. AI Hiring Agent 📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
+### 2. [AI Hiring Agent](./ai-hiring-agent)
+
 An automated resume screening pipeline that evaluates job applicants and logs results.
 - **Trigger:** Google Form submission
 - **Flow:** Resume (PDF) → Extract text → AI Agent scores candidate → Information Extractor structures the output → Sends rejection/acceptance email via Gmail → Logs result to Google Sheets
@@ -23,7 +24,7 @@ An automated resume screening pipeline that evaluates job applicants and logs re
 - ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(200).png)
 - ![iamge alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/41cb4943d8893ecee9d78f6025632c0f7b86f8f1/Screenshot%20(201).png)
 
-### 3. AI Email Assistant 📁 [`AI EMAIL assistant.json`](./AI%20EMAIL%20assistant.json)
+### 3. [AI Email Assistant](./ai-email-assistant)
 
 An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
 - **Trigger:** New Gmail message
