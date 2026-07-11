@@ -1,2 +1,45 @@
-# n8n-ai-automation-projects
-Three end-to-end AI automation workflows built with n8n: an AI research assistant (Telegram bot), an AI hiring agent (resume screening), and an inbox triage assistant (Gmail + Slack).
+# n8n Automation Projects
+
+A collection of three end-to-end automation workflows built using [n8n](https://n8n.io/), an open-source workflow automation tool. These projects were built over the course of a hands-on learning sprint, covering AI agents, API integrations, OAuth authentication, webhook tunneling, and multi-step conditional logic.
+
+## Projects
+
+### 1. AI Research Chatbot (Telegram)
+A Telegram bot that answers user questions by researching the web in real time.
+- **Trigger:** Telegram message
+- **Flow:** User question → AI Agent reformulates query → Second AI Agent researches using SerpAPI → Final answer sent back via Telegram
+- **Stack:** n8n, Groq (Llama 3.3 70B), SerpAPI, Telegram Bot API
+
+📁 [`01-ai-research-chatbot/`](./01-ai-research-chatbot)
+
+### 2. AI Hiring Agent
+An automated resume screening pipeline that evaluates job applicants and logs results.
+- **Trigger:** Google Form submission
+- **Flow:** Resume (PDF) → Extract text → AI Agent scores candidate → Information Extractor structures the output → Sends rejection/acceptance email via Gmail → Logs result to Google Sheets
+- **Stack:** n8n, Groq, Gmail API, Google Sheets API, Google Drive API
+
+📁 [`02-ai-hiring-agent/`](./02-ai-hiring-agent)
+
+### 3. AI Email Assistant
+An intelligent inbox automation that reads incoming emails, summarizes them, classifies urgency, and routes notifications accordingly.
+- **Trigger:** New Gmail message
+- **Flow:** Email received → AI analyzes subject/body → Classifies urgency & category → Routes to Slack alert (if High/Medium urgency) or logs quietly (if Low) → Labels email in Gmail → Appends record to Google Sheets
+- **Stack:** n8n, Groq, Gmail API, Slack API, Google Sheets API
+
+📁 [`03-ai-email-assistant/`](./03-ai-email-assistant)
+
+## Tech Stack Summary
+
+- **Automation platform:** n8n (self-hosted via Docker)
+- **LLM providers:** Groq (Llama 3.3 70B), Google Gemini
+- **Tunneling:** Cloudflare Tunnel (for local webhook exposure during development)
+- **Integrations:** Gmail API, Google Sheets API, Google Drive API, Slack API, Telegram Bot API, SerpAPI
+
+## What I Learned
+
+- Setting up OAuth2 credentials and redirect URIs across multiple Google Cloud APIs
+- Debugging LLM output parsing (handling malformed JSON responses from AI models)
+- Working with Gmail's nested header structure to extract sender/subject data
+- Conditional branching logic based on AI-classified data
+- Exposing a local development environment securely via Cloudflare Tunnel
+- Managing multiple API credentials and rate limits across different LLM providers
