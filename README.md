@@ -17,6 +17,7 @@ An automated resume screening pipeline that evaluates job applicants and logs re
 - **Trigger:** Google Form submission
 - **Flow:** Resume (PDF) → Extract text → AI Agent scores candidate → Information Extractor structures the output → Sends rejection/acceptance email via Gmail → Logs result to Google Sheets
 - **Stack:** n8n, Groq, Gmail API, Google Sheets API, Google Drive API
+- ![image alt](https://github.com/mohithwalt/n8n-ai-automation-projects/blob/ffb78241dc4607bfeeead4cb2e0e9dafe355751d/Screenshot%20(198).png)
 
 📁 [`AI Hiring Agent.json`](./AI%20Hiring%20Agent.json)
 
